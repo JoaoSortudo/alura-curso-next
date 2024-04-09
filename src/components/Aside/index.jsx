@@ -1,7 +1,13 @@
+import Image from 'next/image'
+import styles from './aside.module.css'
+
+import logo from './logo.png'
+
 export function Aside() {
     return (
-        <aside>
-            <img src = '/logo.png' alt="Logo da Code Connect"/>
+        <aside className={styles.aside}>
+            {/* <img src = '/logo.png' alt="Logo da Code Connect"/> */}
+            <Image src = {logo} alt="Logo da Code Connect"/>
         </aside>
     )
 }
