@@ -1,18 +1,23 @@
 import Image from 'next/image'
+import { Avatar } from '../Avatar'
+
 export function CardPost ({ post }) {
     return (
         <article>
             <header>
                 <figure>
-                    <Image/>
+                    <Image src={post.cover} width={438} height={133}/>
                 </figure>
             </header>
             <section>
-                titulo
-                texto
+                <h2>{post.title}</h2>
+                <p>{post.body}</p>
             </section>
             <footer>
-                <Avatar />
+                <Avatar
+                    imageSrc={post.author.avatar} 
+                    name={post.author.username}
+                />
             </footer>
         </article>
     )
