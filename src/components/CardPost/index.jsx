@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import { Avatar } from '../Avatar'
+import styles from './cardpost.module.css'
 
 export function CardPost ({ post }) {
     return (
-        <article>
-            <header>
+        <article className={styles.card}>
+            <header className={styles.header}>
                 <figure>
                     <Image 
                         src={post.cover} 
@@ -14,7 +15,7 @@ export function CardPost ({ post }) {
                     />
                 </figure>
             </header>
-            <section>
+            <section className={styles.body}>
                 <h2>{post.title}</h2>
                 <p>{post.body}</p>
             </section>

@@ -1,0 +1,13 @@
+.card {
+    width: 486px;
+    height: 431px;
+    background: #171D1F;
+}
+
+.header {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.body {
+    color: #BCBCBC;
+}
